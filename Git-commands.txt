@@ -1,0 +1,93 @@
+
+
+$ git init
+
+$ git config --global user.name Nikhil singh
+
+
+$ git config --global user.email nikhilsingh93p@gmail.com
+
+ 
+$ git add .
+
+ 
+$ git commit -m "commit"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ 
+$ code .
+
+ 
+$ git add .
+
+ 
+$ git commit -m "commit"
+[master (root-commit) 5caeb6a] commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Problem1.txt
+
+ 
+$ git remote add origin https://github.com/Nikhilks14/Java-LeetCode.git
+
+ 
+$ git pull --rebase origin master
+Successfully rebased and updated refs/heads/master.
+
+ 
+$ git push -u origin master
+branch 'master' set up to track 'origin/master'.
+
+ 
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Problem1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+$ git add .
+
+ 
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Problem1.txt
+
+
+ 
+$ git commit -m "problem1"
+[master 5cbacaf] problem1
+ 1 file changed, 37 insertions(+), 1 deletion(-)
+
+ 
+$ git pull --rebase origin master
+From https://github.com/Nikhilks14/Java-LeetCode
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+
+ 
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 681 bytes | 681.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Nikhilks14/Java-LeetCode.git
+   34aba41..5cbacaf  master -> master
+branch 'master' set up to track 'origin/master'.
+
+ 
+$
